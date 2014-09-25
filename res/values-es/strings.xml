@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empezar">Empezar</string>
+	<string name="mapa">Mapa</string>
+	<string name="rutas">Rutas</string>
+	<string name="opciones">Opciones</string>
+	<string name="drawer_open">Drawer abierto</string>
+	<string name="drawer_close">Drawer cerrado</string>
+	<string name="menu">Menu</string>
+	<string name="layer">Capa</string>
+	<string name="start">Comienzo</string>
+	<string name="stop">Parar</string>
+	<string name="distancia">Distancia:</string>
+	<string name="tiempo">Tiempo:</string>
+	<string name="end">Fin</string>
+	<string name="saveTrack">¿Quieres guardar este recorrido?</string>
+	<string name="contentDescription">Imagen</string>
+	<string name="loadingTitle">Por favor, espere&#8230;</string>
+	<string name="loadingMsg">Cargando</string>
+	<string name="refresh">Actualizar</string>
+	<string name="username">Usuario</string>
+	<string name="password">Password</string>
+	<string name="save">Guardar</string>
+	<string name="saved">Opciones guardadas correctamente</string>
+	<string name="dataError">Error conectando con</string>
+	<string name="bothLoginError">No se ha podido contactar con Endomondo ni Runtastic, revisa los datos</string>
+	<string name="endomondoLoginError">No se ha podido contactar con Endomondo, revisa los datos</string>
+	<string name="runtasticLoginError">No se ha podido contactar con Runtastic, revisa los datos</string>
+</resources>

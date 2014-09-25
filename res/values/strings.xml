@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pfdeporte</string>
+    <string name="empezar">Start</string>
+	<string name="apikey">AIzaSyCXMYOJoNcZdC9pKQ2PnSHXZ7RdifjUN24</string>
+	<string name="mapa">Map</string>
+	<string name="rutas">Routes</string>
+	<string name="opciones">Settings</string>
+	<string name="drawer_open">Drawer abierto</string>
+	<string name="drawer_close">Drawer cerrado</string>
+	<string name="menu">Menu</string>
+	<string name="layer">Layer</string>
+	<string name="start">Start</string>
+	<string name="stop">Stop</string>
+	<string name="distancia">Distance:</string>
+	<string name="tiempo">Time:</string>
+	<string name="end">End</string>
+	<string name="saveTrack">Do you want to save this track?</string>
+	<string name="contentDescription">Image</string>
+	<string name="loadingTitle">Please wait&#8230;</string>
+	<string name="loadingMsg">Loading</string>
+	<string name="refresh">Refresh</string>
+	<string name="username">Username</string>
+	<string name="password">Password</string>
+	<string name="save">Save</string>
+	<string name="saved">Settings were saved!</string>
+	<string name="dataError">Error connecting with</string>
+	<string name="bothLoginError">Both logins are wrong, please fix them!</string>
+	<string name="endomondoLoginError">Endomondo login is wrong, please fix it!</string>
+	<string name="runtasticLoginError">Runtastic login is wrong, please fix it!</string>
+</resources>

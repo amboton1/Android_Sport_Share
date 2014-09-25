@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/txtName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"/>
+
+<ImageView 
+    android:id="@+id/imgLocal"
+    android:contentDescription="@string/contentDescription"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/loc_ic"
+    android:layout_alignParentRight="true"
+    />
+
+<CheckBox
+    android:id="@+id/chkLocal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgLocal"
+    android:layout_alignRight="@id/imgLocal"
+    />
+
+<ImageView 
+	android:id="@+id/imgEndomondo"
+    android:contentDescription="@string/contentDescription"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+   	android:layout_marginLeft="10dp"
+    android:src="@drawable/endo_ic"
+    android:layout_toLeftOf="@id/imgLocal"
+    />
+
+<CheckBox
+    android:id="@+id/chkEndomondo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgEndomondo"
+    android:layout_alignRight="@id/imgEndomondo"
+    />
+
+<ImageView 
+	android:id="@+id/imgRuntastic"
+    android:contentDescription="@string/contentDescription"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/runt_ic"
+    android:layout_toLeftOf="@id/imgEndomondo"
+    />
+
+<CheckBox
+    android:id="@+id/chkRuntastic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgRuntastic"
+    android:layout_alignRight="@id/imgRuntastic"
+    />
+</RelativeLayout>

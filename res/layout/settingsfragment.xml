@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/settingsEndomondo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/endo_ic" />
+
+    <EditText
+        android:id="@+id/edEndomUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/settingsEndomondo"
+        android:hint="@string/username"
+        android:minWidth="110dp" />
+
+    <EditText
+        android:id="@+id/edEndomPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edEndomUsername"
+        android:layout_alignLeft="@id/edEndomUsername"
+        android:hint="@string/password"
+        android:inputType="textPassword" 
+        android:minWidth="110dp"/>
+
+    <ImageView
+        android:id="@+id/settingsRuntastic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edEndomPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/runt_ic" />
+
+    <EditText
+        android:id="@+id/edRuntUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsEndomondo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/settingsRuntastic"
+        android:hint="@string/username"
+        android:minWidth="110dp" />
+
+    <EditText
+        android:id="@+id/edRuntPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edRuntUsername"
+        android:layout_alignLeft="@id/edRuntUsername"
+        android:hint="@string/password"
+        android:inputType="textPassword" 
+        android:minWidth="110dp"/>
+
+    <Button
+        android:id="@+id/btSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsRuntastic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:minWidth="200dp"
+        android:text="@string/save" />
+
+</RelativeLayout>
