@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">pfdeporte</string>
     <string name="empezar">Start</string>
-	<string name="apikey">AIzaSyCXMYOJoNcZdC9pKQ2PnSHXZ7RdifjUN24</string>
+	<string name="apikey">YOUR_API_KEY</string>
 	<string name="mapa">Map</string>
 	<string name="rutas">Routes</string>
 	<string name="opciones">Settings</string>
