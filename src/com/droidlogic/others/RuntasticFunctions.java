@@ -451,7 +451,7 @@ public class RuntasticFunctions
 				}
 
 				// Now we have to change ID from tracks that are not in
-				// endomondo server anymore.
+				// Runtastic server anymore.
 				for (Track t : localTracks)
 				{
 					if (!t.getRuntasticWorkoutId().equals("")
