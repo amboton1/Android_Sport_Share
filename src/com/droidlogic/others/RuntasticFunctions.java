@@ -59,7 +59,6 @@ public class RuntasticFunctions
 			cookie.setVersion(0);
 			cookie.setDomain("www.runtastic.com");
 			cookie.setPath("/");
-
 			cookieStore.addCookie(cookie);
 			httpContext.setCookieStore(cookieStore);
 

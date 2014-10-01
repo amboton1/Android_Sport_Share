@@ -127,6 +127,25 @@ public class MapsFragment extends Fragment
 					+ String.format("%02d", c.get(Calendar.MINUTE) / 60) + ":"
 					+ String.format("%02d", c.get(Calendar.MINUTE)) + ":"
 					+ String.format("%02d", c.get(Calendar.SECOND)), 1);
+			
+			//Average speed
+			adapter.remove(adapter.getItem(2));
+			adapter.insert(getResources().getString(R.string.avgSpeed)
+					+" "
+					+ format.format(MyFunctions.getAverageSpeed(service.getLocations()))
+					, 2);
+			//Max speed
+			adapter.remove(adapter.getItem(3));
+			adapter.insert(getResources().getString(R.string.maxSpeed)
+					+" "
+					+ format.format(MyFunctions.getMaxSpeed(service.getLocations()))
+					, 2);
+			//Min speed
+			adapter.remove(adapter.getItem(4));
+			adapter.insert(getResources().getString(R.string.minSpeed)
+					+" "
+					+ format.format(MyFunctions.getMinSpeed(service.getLocations()))
+					, 2);
 			adapter.notifyDataSetChanged();
 
 		}
@@ -214,8 +233,10 @@ public class MapsFragment extends Fragment
 		super.onCreate(savedInstanceState);
 		List<String> spinnerArray = new ArrayList<String>();
 		spinnerArray.add(getResources().getString(R.string.distancia));
-		spinnerArray.add(getResources().getString(R.string.tiempo)
-				+ " 00:00:00");
+		spinnerArray.add(getResources().getString(R.string.tiempo)+ " 00:00:00");
+		spinnerArray.add(getResources().getString(R.string.avgSpeed));
+		spinnerArray.add(getResources().getString(R.string.maxSpeed));
+		spinnerArray.add(getResources().getString(R.string.minSpeed));
 		adapter = new ArrayAdapter<String>(this.getActivity(),
 				android.R.layout.simple_spinner_item, spinnerArray);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -264,6 +285,26 @@ public class MapsFragment extends Fragment
 						+ ":" + String.format("%02d", c.get(Calendar.MINUTE))
 						+ ":" + String.format("%02d", c.get(Calendar.SECOND)),
 						1);
+				
+				//Average speed
+				adapter.remove(adapter.getItem(2));
+				adapter.insert(getResources().getString(R.string.avgSpeed)
+						+" "
+						+ format.format(MyFunctions.getAverageSpeed(service.getLocations()))
+						, 2);
+				//Max speed
+				adapter.remove(adapter.getItem(3));
+				adapter.insert(getResources().getString(R.string.maxSpeed)
+						+" "
+						+ format.format(MyFunctions.getMaxSpeed(service.getLocations()))
+						, 2);
+				//Min speed
+				adapter.remove(adapter.getItem(4));
+				adapter.insert(getResources().getString(R.string.minSpeed)
+						+" "
+						+ format.format(MyFunctions.getMinSpeed(service.getLocations()))
+						, 2);
+				
 				adapter.notifyDataSetChanged();
 				new myAsyncTask().execute(true);
 			}
@@ -277,6 +318,22 @@ public class MapsFragment extends Fragment
 				c.setTimeInMillis(MyFunctions.getTime(locations));
 				adapter.insert(getResources().getString(R.string.tiempo)
 						+ " 00:00:00", 1);
+				
+				//Average speed
+				adapter.remove(adapter.getItem(2));
+				adapter.insert(getResources().getString(R.string.avgSpeed)
+						+" 0"
+						, 2);
+				//Max speed
+				adapter.remove(adapter.getItem(3));
+				adapter.insert(getResources().getString(R.string.maxSpeed)
+						+" 0"
+						, 2);
+				//Min speed
+				adapter.remove(adapter.getItem(4));
+				adapter.insert(getResources().getString(R.string.minSpeed)
+						+" 0"
+						, 2);
 				adapter.notifyDataSetChanged();
 
 			}
@@ -326,6 +383,24 @@ public class MapsFragment extends Fragment
 			adapter.remove(adapter.getItem(1));
 			adapter.insert(getResources().getString(R.string.tiempo) + " "
 					+ time, 1);
+			//Average speed
+			adapter.remove(adapter.getItem(2));
+			adapter.insert(getResources().getString(R.string.avgSpeed)
+					+" "
+					+ format.format(MyFunctions.getAverageSpeed(service.getLocations()))
+					, 2);
+			//Max speed
+			adapter.remove(adapter.getItem(3));
+			adapter.insert(getResources().getString(R.string.maxSpeed)
+					+" "
+					+ format.format(MyFunctions.getMaxSpeed(service.getLocations()))
+					, 2);
+			//Min speed
+			adapter.remove(adapter.getItem(4));
+			adapter.insert(getResources().getString(R.string.minSpeed)
+					+" "
+					+ format.format(MyFunctions.getMinSpeed(service.getLocations()))
+					, 2);
 			adapter.notifyDataSetChanged();
 
 			lineOptions = new PolylineOptions();

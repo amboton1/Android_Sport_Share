@@ -48,6 +48,92 @@ public class MyFunctions
 		}
 		return res;
 	}
+	
+	/**
+	 * Returns the speed in km/h
+	 * @param locations
+	 * @return speed in km/h
+	 */
+	public static float getAverageSpeed(List<Location> locations)
+	{
+		float res=0, distance, speed;
+		long time;
+		Location l1, l2;;
+		if (locations!=null && locations.size()>0)
+		{
+			for (int i = 0; i < locations.size() - 1; i++)
+			{
+				l1=locations.get(i);
+				l2=locations.get(i+1);
+				distance=l1.distanceTo(l2);
+				time=(l2.getTime()-l1.getTime())/1000l;
+				speed=0;
+				if (time!=0l)
+				{
+					speed=distance/time;
+				}
+				res+=speed;
+			}
+			res=res*3.6f/locations.size();
+		}
+		return res;
+	}
+	
+	public static float getMaxSpeed(List<Location> locations)
+	{
+		float res=0, distance, speed;
+		long time;
+		Location l1, l2;
+		if (locations!=null && locations.size()>0)
+		{
+			for (int i = 0; i < locations.size() - 1; i++)
+			{
+				l1=locations.get(i);
+				l2=locations.get(i+1);
+				distance=l1.distanceTo(l2);
+				time=(l2.getTime()-l1.getTime())/1000l;
+				speed=0;
+				if (time!=0l)
+				{
+					speed=(distance/time)*3.6f;
+				}
+				
+				if (speed>0 && (res==0 || speed>res))
+				{
+					res=speed;
+				}
+			}
+		}
+		return res;
+	}
+	
+	public static float getMinSpeed(List<Location> locations)
+	{
+		float res=0, distance, speed;
+		long time;
+		Location l1, l2;
+		if (locations!=null && locations.size()>0)
+		{
+			for (int i = 0; i < locations.size() - 1; i++)
+			{
+				l1=locations.get(i);
+				l2=locations.get(i+1);
+				distance=l1.distanceTo(l2);
+				time=(l2.getTime()-l1.getTime())/1000l;
+				speed=0;
+				if (time!=0l)
+				{
+					speed=(distance/time)*3.6f;
+				}
+				
+				if (speed>0 && (res==0 || speed<res))
+				{
+					res=speed;
+				}
+			}
+		}
+		return res;
+	}
 
 	public static long getTime(List<Location> locations)
 	{

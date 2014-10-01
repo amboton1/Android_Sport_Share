@@ -12,6 +12,9 @@
 	<string name="stop">Parar</string>
 	<string name="distancia">Distancia:</string>
 	<string name="tiempo">Tiempo:</string>
+	<string name="avgSpeed">VelMed:</string>
+	<string name="maxSpeed">VelMax:</string>
+	<string name="minSpeed">VelMin:</string>
 	<string name="end">Fin</string>
 	<string name="saveTrack">¿Quieres guardar este recorrido?</string>
 	<string name="contentDescription">Imagen</string>

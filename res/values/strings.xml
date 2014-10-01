@@ -14,6 +14,9 @@
 	<string name="stop">Stop</string>
 	<string name="distancia">Distance:</string>
 	<string name="tiempo">Time:</string>
+	<string name="avgSpeed">AvgSpeed:</string>
+	<string name="maxSpeed">MaxSpeed:</string>
+	<string name="minSpeed">MinSpeed:</string>
 	<string name="end">End</string>
 	<string name="saveTrack">Do you want to save this track?</string>
 	<string name="contentDescription">Image</string>
