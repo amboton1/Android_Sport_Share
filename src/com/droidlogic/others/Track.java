@@ -272,6 +272,10 @@ public class Track implements Comparable<Track>
 				// serializer.text(timer.format("%Y-%m-%dT%H:%M:%SZ"));
 				serializer.text(timer.format3339(false));
 				serializer.endTag("", "time");
+				serializer.startTag("", "ele");
+				// serializer.text(timer.format("%Y-%m-%dT%H:%M:%SZ"));
+				serializer.text(Double.toString(l.getAltitude()));
+				serializer.endTag("", "ele");
 				serializer.text("\n");
 				serializer.endTag("", "trkpt");
 				serializer.text("\n");
